@@ -1,0 +1,42 @@
+import Nav from './sectionComponents/Nav.jsx';
+import Hero from './sectionComponents/Hero.jsx';
+import AboutSimple from './sectionComponents/AboutSimple.jsx';
+import Competences from './sectionComponents/Competences.jsx';
+import Works from './sectionComponents/Works.jsx';
+import AboutGreater from './sectionComponents/AboutGreater.jsx';
+import Footer from './sectionComponents/Footer.jsx';
+
+import gsap from 'gsap';
+import {ReactLenis} from 'lenis/react';
+import { useEffect, useRef } from 'react';
+
+
+
+function App() {
+  const lenisRef = useRef();
+
+  useEffect(() => {
+    function update(time) {
+      lenisRef.current?.lenis?.raf(time * 1000);
+    }
+
+    gsap.ticker.add(update);
+
+    return () => gsap.ticker.remove(update);
+  }, []);
+
+  return (
+    <>
+      <ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
+      <Nav></Nav>
+      <Hero></Hero>
+      <AboutSimple></AboutSimple>
+      <Competences></Competences>
+      <Works></Works>
+      <AboutGreater></AboutGreater>
+      <Footer></Footer>
+    </>
+  );
+}
+
+export default App

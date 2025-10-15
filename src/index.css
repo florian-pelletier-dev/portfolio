@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --font-regular: "Ronzino", sans-serif;
+  --font-italic: "Ronzino Oblique", sans-serif;
+  --font-bold: "Ronzino Bold", sans-serif;
+
+  --text-display: 6.85rem;
+  --text-heading1: 4.24rem;
+  --text-heading2: 2.62rem;
+  --text-heading3: 2.06rem;
+
+  --color-black: #101010;
+  --color-gray: #aaaaaa;
+
+  --breakpoint-xs: 35rem;
+  --breakpoint-2xs: 28rem;
+  --breakpoint-3xs: 26rem;
+}
+
+@layer base {
+  html {
+    @apply font-regular;
+  }
+}
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ronzino";
+  src: url(./assets/fonts/Ronzino-Regular.otf);
+}
+
+@font-face {
+  font-family: "Ronzino Oblique";
+  src: url(./assets/fonts/Ronzino-Oblique.otf);
+}
+
+@font-face {
+  font-family: "Ronzino Bold";
+  src: url(./assets/fonts/Ronzino-Bold.otf);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green-dark-color: #0c323e;
+  --green-light-color: #1d5560;
+
+  --white-color: #F1F1F6;
+  --gray-color: #aaa49d;
+  --beige-color: #c0a888;
+
+  font-size: 18px;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  transition: width 300ms ease;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-white);
+  border-radius: 100vw;
+  margin-block: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-black);
+  border-radius: 100vw;
+  border: 0.25rem var(--color-white) solid;
+}
+
+body.show-scrollbar::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.spacing-small {
+  min-height: 50vh;
+  height: 50vh;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.scroll-section h3 {
+  color: white;
+}
+
+.svg-white {
+  filter: invert(100%);
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-black);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.link:hover::before, .link.active::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
