@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import { HashRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 
 import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -8,8 +8,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 )
