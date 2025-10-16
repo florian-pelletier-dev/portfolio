@@ -40,7 +40,7 @@ function AboutGreater() {
                 <p className='text-balance'>J'ai pour volonté de devenir à la fin de mon cursus développeur full-stack, et prêt à tout pour le devenir&nbsp;💪! En attendant, je reste un mordu de jeux-vidéos et un adepte de la création de mondes fantasy.</p>
                 <p className='text-balance'>Psst&nbsp;! Je recherche par ailleurs un stage pour le deuxième semestre de 2026 si possible dans le développement web&nbsp;😉!</p>
                 {/* arrow from bootstrap icons */}
-                <a href="/CV_Florian_Pelletier.pdf" className='flex group link w-fit' target='_blank'>Mon CV <img src={arrow} alt="" className='group-hover:-translate-y-1 duration-300'/></a> 
+                <a href="portfolio/CV_Florian_Pelletier.pdf" className='flex group link w-fit' target='_blank'>Mon CV <img src={arrow} alt="" className='group-hover:-translate-y-1 duration-300'/></a> 
             </div>
 
         </section>
