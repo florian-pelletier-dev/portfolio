@@ -15,7 +15,7 @@ function Nav() {
                 <a href="#skills"><li className='cursor-pointer link'>Skills</li></a>
                 <a href="#works"><li className='cursor-pointer link'>Works</li></a>
                 <a href="#about"><li className='cursor-pointer link'>About</li></a>
-                <a href="/CV_Florian_Pelletier.pdf" target='_blank'><li className='text-white bg-black 2xs:p-2 2xs:px-5 p-1 px-2.5 rounded-full cursor-pointer'>Mon CV</li></a>
+                <a href="/portfolio/CV_Florian_Pelletier.pdf" target='_blank'><li className='text-white bg-black 2xs:p-2 2xs:px-5 p-1 px-2.5 rounded-full cursor-pointer'>Mon CV</li></a>
             </ul>
         </nav>
 
