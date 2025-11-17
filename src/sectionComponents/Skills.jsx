@@ -11,6 +11,7 @@ import react from '../assets/svg/logos/react.svg';
 import gsap from '../assets/svg/logos/gsap.svg';
 import wordpress from '../assets/svg/logos/wordpress.svg';
 import affinity from '../assets/svg/logos/affinity.svg';
+import figma from '../assets/svg/logos/figma.svg';
 
 function Competences() {
     return (
@@ -33,6 +34,7 @@ function Competences() {
                 <article className="flex xs:flex-row flex-col xs:items-baseline items-center xs:gap-0 gap-5">
                     <h3 className="leading-[1em] xs:w-fit w-full xs:text-left text-center font-bold text-balance text-white text-heading3 justify-self-center">Création</h3>
                     <ul className="leading-[1em] text-balance xs:w-full w-fit text-white sm:text-heading2 text-heading3 justify-self-center xs:text-right text-left *:flex *:xs:justify-self-end-safe *:gap-5 *:xs:flex-row *:flex-row-reverse *:w-fit self-start">
+                        <li>figma <img src={figma} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>photoshop <img src={photoshop} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>illustrator <img src={illustrator} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>premiere pro <img src={premiere} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
