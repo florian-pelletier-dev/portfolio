@@ -35,7 +35,7 @@ function AboutGreater() {
 
             <img src={mePic} loading='lazy' alt="moi" className='xl:w-3/7 md:w-4/7 xs:w-5/7 2xs:w-6/7 w-full object-cover'/>
             <div className='flex flex-col gap-5 xl:w-1/2 md:w-4/7 xs:w-5/7 2xs:w-6/7 w-full sticky top-21 h-fit xl:self-start'>
-                <h2 className='leading-[1em] font-bold text-balance text-black xl:text-display md:text-heading1 text-heading2 mb-5'>Et quoi de plus sur moi?</h2>
+                <h2 className='leading-[0.9em] font-bold text-balance text-black xl:text-display md:text-heading1 text-heading2'>Et quoi de plus sur moi?</h2>
                 <p className='text-balance'>Je suis un étudiant en deuxième année de BUT MMI (Multimédia et Métiers de l'Informatique). Pour la faire simple, je suis polyvalent&nbsp;: je code des sites web statiques comme dynamiques&nbsp;💻, je crée sur Adobe et ses variantes, et je travaille également sur la communication&nbsp;📢.</p>
                 <p className='text-balance'>J'ai pour volonté de devenir à la fin de mon cursus développeur full-stack, et prêt à tout pour le devenir&nbsp;💪! En attendant, je reste un mordu de jeux-vidéos et un adepte de la création de mondes fantasy.</p>
                 <p className='text-balance'>Psst&nbsp;! Je recherche par ailleurs un stage pour le deuxième semestre de 2026 dans le développement web, le graphisme, ou encore la communication&nbsp;😉!</p>

@@ -34,11 +34,11 @@ function Hero(){
                 <h1 className='font-bold lg:text-display text-heading1 tracking-tight md:leading-[var(--text-display)*1.5] leading-[var(--text-heading1)]'>Florian Pelletier</h1>
                 <h2 className='lg:text-heading1 text-heading2 md:leading-0.5 leading-[var(--text-heading2)] tracking-tight'>Développeur & Créatif</h2>
             </div>
-            <div className='flex xl:w-2/5 lg:w-4/7 md:w-4/6 xs:w-4/5 w-full gap-2.5 self-end-safe '>
+            <div className='flex xl:w-2/5 lg:w-4/7 md:w-4/6 xs:w-4/5 w-full gap-2.5 self-end-safe justify-end-safe'>
                 <ul className='2xs:w-1/3 w-fit flex flex-col justify-center items-end-safe font-italic'>
-                    <li>Dev Web /</li>
-                    <li>Dev CMS /</li>
-                    <li>Design Web /</li>
+                    <li>Dev' Web /</li>
+                    <li>Création /</li>
+                    <li>Com' /</li>
                 </ul>
                 <div className='2xs:w-2/3 w-1/2' id='mePic'>
                     <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={800}>
