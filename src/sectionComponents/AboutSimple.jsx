@@ -25,7 +25,7 @@ function AboutSimple() {
                 trigger: trigger,
                 start: "top 80%",
                 end: "top top",
-                toggleActions: "restart reverse restart reverse",
+                toggleActions: "restart none none reverse",
             },
         });
 
@@ -39,7 +39,8 @@ function AboutSimple() {
         };
     }, []);
 
-    const text = "Je suis un étudiant en développement web full-stack, passionné et toujours là pour en apprendre plus.";
+    const oldText = "Je suis un étudiant en développement web full-stack, passionné et toujours là pour en apprendre plus.";
+    const text = "J'accompagne dans la création, maintenance, et rénovation de vos sites-webs, logos, et graphiques."
 
     return(
         <section id="about-simple-section" className='flex flex-col 2xs:p-10 py-10 px-5 xl:text-display sm:text-heading1 2xs:text-heading2 text-heading3 bg-black justify-center items-center z-10 min-h-screen color-section'>

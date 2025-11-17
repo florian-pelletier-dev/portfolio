@@ -38,7 +38,7 @@ function AboutGreater() {
                 <h2 className='leading-[1em] font-bold text-balance text-black xl:text-display md:text-heading1 text-heading2 mb-5'>Et quoi de plus sur moi?</h2>
                 <p className='text-balance'>Je suis un étudiant en deuxième année de BUT MMI (Multimédia et Métiers de l'Informatique). Pour la faire simple, je suis polyvalent&nbsp;: je code des sites web statiques comme dynamiques&nbsp;💻, je crée sur Adobe et ses variantes, et je travaille également sur la communication&nbsp;📢.</p>
                 <p className='text-balance'>J'ai pour volonté de devenir à la fin de mon cursus développeur full-stack, et prêt à tout pour le devenir&nbsp;💪! En attendant, je reste un mordu de jeux-vidéos et un adepte de la création de mondes fantasy.</p>
-                <p className='text-balance'>Psst&nbsp;! Je recherche par ailleurs un stage pour le deuxième semestre de 2026 si possible dans le développement web&nbsp;😉!</p>
+                <p className='text-balance'>Psst&nbsp;! Je recherche par ailleurs un stage pour le deuxième semestre de 2026 dans le développement web, le graphisme, ou encore la communication&nbsp;😉!</p>
                 {/* arrow from bootstrap icons */}
                 <a href="/portfolio/CV_Florian_Pelletier.pdf" className='flex group link w-fit' target='_blank'>Mon CV <img src={arrow} alt="" className='group-hover:-translate-y-1 duration-300'/></a> 
             </div>
