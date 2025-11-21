@@ -6,7 +6,7 @@ function CharteGraphique() {
 
         <div className="flex flex-col gap-5 justify-center w-full">
 
-            <p className="w-2/3 text-balance">L'ensemble de l'image de l'exposition se fonde autour d'une charte graphique forte, qui allie monde ouvrier et côté immersif par son univers graphique toutes en formes abstraites.</p>
+            <p className="lg:w-2/3 md:w-3/4 w-full text-balancee">L'ensemble de l'image de l'exposition se fonde autour d'une charte graphique forte, qui allie monde ouvrier et côté immersif par son univers graphique toutes en formes abstraites.</p>
 
             <iframe src={charte} frameborder="0" className="rounded-xl w-full h-[100vh]"></iframe>
 

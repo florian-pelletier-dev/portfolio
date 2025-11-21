@@ -29,7 +29,7 @@ function ConlangArchive() {
             </section>
             <section className="lg:px-50 md:px-25 px-10 py-21 flex flex-col items-start justify-center" id="mise-en-place">
                 <h2 className="leading-[1em] font-bold text-balance text-black 2xl:text-display text-heading1 mb-5 md:text-left text-center w-full">Mise en Place</h2>
-                <p className="lg:w-2/3 md:w-3/4 w-full text-balance mb-10">Je me suis donc affairé à crée une page en html-css-js esthétiquement plaisante tout en possédant une forme modulaire qui me permette de rajouter de nouveaux pdf au fil de mes créations. C'est donc pour cela que les entrées ont la forme de lignes avec un duo image-texte, en alterné.</p>
+                <p className="lg:w-2/3 md:w-3/4 w-full text-balance mb-10">Je me suis donc affairé à créer une page en html-css-js esthétiquement plaisante tout en possédant une forme modulaire qui me permette de rajouter de nouveaux pdf au fil de mes créations. C'est donc pour cela que les entrées ont la forme de lignes avec un duo image-texte, en alterné.</p>
                 <img src={conlang2} alt="" className="rounded-xl w-full" />
             </section>
             <section className="lg:px-50 md:px-25 px-10 py-21 mb-10 flex flex-col items-start justify-center" id="conclusion">

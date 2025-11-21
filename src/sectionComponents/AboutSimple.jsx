@@ -40,11 +40,11 @@ function AboutSimple() {
     }, []);
 
     const oldText = "Je suis un étudiant en développement web full-stack, passionné et toujours là pour en apprendre plus.";
-    const text = "J'accompagne dans la création, maintenance, et rénovation de vos sites-webs, logos, et graphiques."
+    const text = "Étudiant ambitieux, j'accompagne dans la création, maintenance, et rénovation de vos sites-webs, logos, et nombreux graphismes."
 
     return(
         <section id="about-simple-section" className='flex flex-col 2xs:p-10 py-10 px-5 xl:text-display sm:text-heading1 2xs:text-heading2 text-heading3 bg-black justify-center items-center z-10 min-h-screen color-section'>
-            <p className=" leading-[1em] font-bold text-balance text-black tracking-tight" ref={triggerRef}>{text.split("").map((letter, index) => {
+            <p className=" leading-[1em] font-bold text-balance text-black tracking-tight py-25" ref={triggerRef}>{text.split("").map((letter, index) => {
                 return <span className="reveal-text" ref={setlettersRef} key={index}>{letter}</span>
             })}</p>
         </section>
