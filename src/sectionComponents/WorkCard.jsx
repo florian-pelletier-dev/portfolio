@@ -13,20 +13,22 @@ function WorkCard({title,desc,img,link,badges}) {
     const cardRef = useRef(null)
 
     useEffect(() => {
-
-        gsap.fromTo(
-            cardRef.current,
-            {scale: 0.5}, 
-            {
-                scale: 1,
-                scrollTrigger: {
-                    trigger: cardRef.current,
-                    start: "top bottom",
-                    end: "middle middle",
-                    toggleActions: "restart none none reverse",
-                },
-            }
-        );
+        let mm = gsap.matchMedia();
+        mm.add("(min-width: 800px)", ()=> {
+            gsap.fromTo(
+                cardRef.current,
+                {scale: 0.5}, 
+                {
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: cardRef.current,
+                        start: "top bottom",
+                        end: "middle middle",
+                        toggleActions: "restart none none reverse",
+                    },
+                }
+            );
+        })
 
         const img = cardRef.current.querySelector('img');
         if (img && !img.complete) {
@@ -38,7 +40,7 @@ function WorkCard({title,desc,img,link,badges}) {
 
     return (
         <article className="work-card flex flex-col items-center justify-center">
-            <Link to={link} className='flex flex-col items-center justify-center lg:w-2/3 md:w-4/5 w-full' ref={cardRef}>
+            <Link to={link} className='flex flex-col items-center justify-center lg:w-2/3 md:w-4/5 w-full scale-100' ref={cardRef}>
                 <div className='h-fit rounded-xl overflow-hidden relative w-full'>
                     <img src={img} loading='lazy' alt="projet" className="w-full"/>
                     <div className='flex sm:gap-5 xs:gap-2 gap-1 absolute 2xs:bottom-5 2xs:left-5 bottom-2 left-1'>
