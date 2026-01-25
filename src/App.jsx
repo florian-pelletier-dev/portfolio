@@ -3,7 +3,7 @@ import Home from './components/Home.jsx';
 import ConlangArchive from './components/ConlangArchive.jsx';
 import Ticketer from './components/Ticketer.jsx';
 import Fil from './components/Fil.jsx';
-import CharteGraphique from './sectionComponents/filComponents/charteGraphique.jsx';
+import CharteGraphique from './sectionComponents/filComponents/CharteGraphique.jsx';
 import LigneEditoriale from './sectionComponents/filComponents/ligneEditoriale.jsx';
 import AxeCommunication from './sectionComponents/filComponents/axeCommunication.jsx';
 import SiteWeb from './sectionComponents/filComponents/siteWeb.jsx';
@@ -17,6 +17,7 @@ function App() {
 
   const lenisRef = useRef();
   const location = useLocation();
+  const mainRoute = location.pathname.split("/")[1];
 
   useEffect(() => {
     function update(time) {
@@ -33,7 +34,7 @@ function App() {
     if (lenisRef.current?.lenis) {
       lenisRef.current.lenis.scrollTo(0, { immediate: true });
     }
-  }, [location.pathname]);
+  }, [mainRoute]);
 
   // scroll to top on reload
   useEffect(() => {
