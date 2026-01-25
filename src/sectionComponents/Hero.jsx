@@ -42,7 +42,7 @@ function Hero(){
                 </ul>
                 <div className='2xs:w-2/3 w-1/2' id='mePic'>
                     <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} transitionSpeed={800}>
-                        <img src={mePic} loading='lazy' alt="" className='w-full grayscale-100 brightness-110 hover:grayscale-0 hover:brightness-100 duration-300'/>
+                        <img src={mePic} loading='lazy' alt="" className='w-full grayscale-0 brightness-100 md:grayscale-100 md:brightness-110 hover:grayscale-0 hover:brightness-100 duration-300'/>
                     </Tilt>
                 </div>
                 

@@ -13,7 +13,7 @@ import ticketer_modify from "../assets/img/ticketer_modify.png";
 import { Link } from "react-router-dom";
 
 function Ticketer() {
-    const nextProject = "/au-fil-d-elbeuf"
+    const nextProject = "/conlang-archive"
     
     return (
         <>

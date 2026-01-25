@@ -8,7 +8,7 @@ import conlang2 from "../assets/img/conlang2.png";
 import { Link } from "react-router-dom";
 
 function ConlangArchive() {
-    const nextProject = "/ticketer"
+    const nextProject = "/retro-miam"
     
     return (
         <>

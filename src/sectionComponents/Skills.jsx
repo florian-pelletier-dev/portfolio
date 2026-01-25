@@ -29,6 +29,7 @@ function Competences() {
                         <li>php <img src={php} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>sql <img src={sql} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>bootstrap <img src={bootstrap} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
+                        <li>tailwind <img src={css} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                     </ul>
                 </article>
                 <article className="flex xs:flex-row flex-col xs:items-baseline items-center xs:gap-0 gap-5">
@@ -45,7 +46,6 @@ function Competences() {
                     <h3 className="leading-[1em] xs:w-fit w-full xs:text-left text-center font-bold text-balance text-white text-heading3 justify-self-center">J'apprends</h3>
                     <ul className="leading-[1em] text-balance xs:w-full w-fit text-white sm:text-heading2 text-heading3 justify-self-center xs:text-right text-left *:flex *:xs:justify-self-end-safe *:gap-5 *:xs:flex-row *:flex-row-reverse *:w-fit self-start">
                         <li>react <img src={react} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
-                        <li>tailwind <img src={css} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                         <li>gsap <img src={gsap} alt="" className='sm:w-[var(--text-heading2)] w-[var(--text-heading3)] svg-white' /></li>
                     </ul>
                 </article>

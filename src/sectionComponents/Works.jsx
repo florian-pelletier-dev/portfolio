@@ -3,6 +3,7 @@ import conlang from '../assets/img/conlang.png';
 import fil from '../assets/img/fil.png';
 import ticketer from '../assets/img/ticketer.png';
 import retromiam from '../assets/img/retromiam.png';
+import exit from '../assets/img/exit.png';
 
 import {useRef, useEffect} from "react";
 import gsap from "gsap";
@@ -24,12 +25,22 @@ function Works() {
             <section className='z-1 flex flex-col gap-50 mb-50'>
 
                 <WorkCard
-                    title={"Conlang Archive"}
-                    desc={"Un portfolio personnel dédié à un hobby que j'affectionne le plus : le conlanging ou la création de langues."}
-                    img={conlang}
-                    link={"conlang-archive"}
+                    title={"Au fil d'Elbeuf"}
+                    desc={"Création en équipe d'une exposition interactive célébrant le passé historique industriel d'Elbeuf, avec travail sur le fond, la forme, et la communication."}
+                    img={fil}
+                    link={"au-fil-d-elbeuf"}
                     badges={
-                        ["html","css","js"]
+                        ["branding","wordpress","adobe"]
+                    }
+                />
+
+                <WorkCard
+                    title={"exit"}
+                    desc={"Création d'un crescendo basé sur les codes du constructivisme via une musique sur mesure ainsi que tournage et montage de chaque plan."}
+                    img={exit}
+                    link={"exit-crescendo"}
+                    badges={
+                        ["premiere pro","adobe audition","constructivisme"]
                     }
                 />
 
@@ -44,12 +55,12 @@ function Works() {
                 />
 
                 <WorkCard
-                    title={"Au fil d'Elbeuf"}
-                    desc={"Création en équipe d'une exposition interactive célébrant le passé historique industriel d'Elbeuf, avec travail sur le fond, la forme, et la communication."}
-                    img={fil}
-                    link={"au-fil-d-elbeuf"}
+                    title={"Conlang Archive"}
+                    desc={"Un portfolio personnel dédié à un hobby que j'affectionne le plus : le conlanging ou la création de langues."}
+                    img={conlang}
+                    link={"conlang-archive"}
                     badges={
-                        ["branding","wordpress","adobe"]
+                        ["html","css","js"]
                     }
                 />
 

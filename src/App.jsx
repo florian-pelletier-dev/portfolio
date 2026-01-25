@@ -8,6 +8,7 @@ import LigneEditoriale from './sectionComponents/filComponents/ligneEditoriale.j
 import AxeCommunication from './sectionComponents/filComponents/axeCommunication.jsx';
 import SiteWeb from './sectionComponents/filComponents/siteWeb.jsx';
 import RetroMiam from './components/RetroMiam.jsx';
+import Exit from './components/Exit.jsx';
 
 import gsap from 'gsap';
 import {ReactLenis} from 'lenis/react';
@@ -66,6 +67,7 @@ function App() {
             <Route path='site-web' element={<SiteWeb />} />
           </Route>
           <Route path='retro-miam' element={<RetroMiam />}/>
+          <Route path='exit-crescendo' element={<Exit />} />
         </Routes>
       </>
   );

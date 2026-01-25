@@ -7,7 +7,7 @@ import palais from "../assets/img/fil_palais.png"
 import { Link, NavLink, Outlet } from "react-router-dom";
 
 function Fil() {
-    const nextProject = "/retro-miam"
+    const nextProject = "/exit-crescendo"
     
     return (
         <>

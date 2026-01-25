@@ -12,7 +12,7 @@ import retro_diagram from "../assets/img/retro_diagram.png";
 import { Link } from "react-router-dom";
 
 function RetroMiam() {
-    const nextProject = "/conlang-archive"
+    const nextProject = "/au-fil-d-elbeuf"
     
     return (
         <>
