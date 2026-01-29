@@ -4,6 +4,8 @@ import fil from '../assets/img/fil.png';
 import ticketer from '../assets/img/ticketer.png';
 import retromiam from '../assets/img/retromiam.png';
 import exit from '../assets/img/exit.png';
+import dashboard from '../assets/img/dashboard_climat.png';
+import marathon from '../assets/img/marathon.png';
 
 import {useRef, useEffect} from "react";
 import gsap from "gsap";
@@ -25,6 +27,26 @@ function Works() {
             <section className='z-1 flex flex-col gap-50 mb-50'>
 
                 <WorkCard
+                    title={"Dashboard Climat"}
+                    desc={"Analyse et représentation d'un jeu de donnée sur le climat en Loire-Atlantique dans le but de démontrer graphiquement le changement climatique."}
+                    img={dashboard}
+                    link={"dashboard"}
+                    badges={
+                        ["sql","js","dashboard"]
+                    }
+                />
+
+                <WorkCard
+                    title={"Application Marathon"}
+                    desc={"Création d'une application mobile et d'un dashboard pour organisateurs afin de faciliter l'organisation d'un marathon"}
+                    img={marathon}
+                    link={"marathon"}
+                    badges={
+                        ["figma", "maquette","UX/UI"]
+                    }
+                />
+
+                <WorkCard
                     title={"Au fil d'Elbeuf"}
                     desc={"Création en équipe d'une exposition interactive célébrant le passé historique industriel d'Elbeuf, avec travail sur le fond, la forme, et la communication."}
                     img={fil}
@@ -40,7 +62,7 @@ function Works() {
                     img={exit}
                     link={"exit-crescendo"}
                     badges={
-                        ["premiere pro","adobe audition","constructivisme"]
+                        ["premiere","audition","constructivisme"]
                     }
                 />
 

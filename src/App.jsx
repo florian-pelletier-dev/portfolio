@@ -9,6 +9,10 @@ import AxeCommunication from './sectionComponents/filComponents/axeCommunication
 import SiteWeb from './sectionComponents/filComponents/siteWeb.jsx';
 import RetroMiam from './components/RetroMiam.jsx';
 import Exit from './components/Exit.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import Marathon from './components/Marathon.jsx';
+import ApplicationMobile from './sectionComponents/marathonComponents/FigmaMobile.jsx';
+import DashboardDesktop from './sectionComponents/marathonComponents/FigmaDesktop.jsx';
 
 import gsap from 'gsap';
 import {ReactLenis} from 'lenis/react';
@@ -68,6 +72,12 @@ function App() {
           </Route>
           <Route path='retro-miam' element={<RetroMiam />}/>
           <Route path='exit-crescendo' element={<Exit />} />
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='marathon' element={<Marathon />}>
+            <Route index element={<ApplicationMobile />} />
+            <Route path='maquette-application-mobile' element={<ApplicationMobile />} />
+            <Route path='maquette-dashboard-desktop' element={<DashboardDesktop />} />
+          </Route>
         </Routes>
       </>
   );

@@ -3,11 +3,10 @@ import WorkTopNav from "../sectionComponents/WorkTopNav";
 import Footer from "../sectionComponents/Footer";
 
 import exit from "../assets/img/exit.png";
-import palais from "../assets/img/fil_palais.png";
 
 import { Link, NavLink, Outlet } from "react-router-dom";
 
-function Fil() {
+function Exit() {
     const nextProject = "/ticketer"
     
     return (
@@ -21,7 +20,15 @@ function Fil() {
             />
             <section className="lg:px-50 md:px-25 sm:px-10 px-0 py-10 md:pt-10 pt-32 flex flex-col items-start justify-center" id="home">
                 <h1 className="2xl:text-display md:text-heading1 text-heading2 text-black font-bold tracking-tight self-start md:text-left text-center w-full leading-10 xs:leading-normal pb-5 xs:pb-0">exit</h1>
-                <img src={exit} alt="" className="rounded-xl w-full" />
+                <iframe 
+                    src="https://www.youtube.com/embed/_i49jwXV2Ro?si=3ZjGA-21l8jy7sbu" 
+                    frameborder="0"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    className="rounded-xl w-full aspect-video">
+                </iframe>
             </section>
             <section className="lg:px-50 md:px-25 px-10 py-10 md:pt-10 pt-32 flex flex-col items-start justify-center gap-5" id="contexte">
                 <h2 className="leading-[1em] font-bold text-balance text-black 2xl:text-display md:text-heading1 text-heading2 mb-5 md:text-left text-center w-full">Contexte</h2>
@@ -35,15 +42,6 @@ function Fil() {
             </section>
             <section className="lg:px-50 md:px-25 sm:px-10 px-0 py-10 md:pt-10 pt-32 flex flex-col items-start justify-center" id="bilan">
                 <h2 className="leading-[1em] font-bold text-balance text-black 2xl:text-display md:text-heading1 text-heading2 mb-5 md:text-left text-center w-full">Bilan</h2>
-                <iframe 
-                    src="https://www.youtube.com/embed/_i49jwXV2Ro?si=3ZjGA-21l8jy7sbu" 
-                    frameborder="0"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                    className="rounded-xl w-full aspect-video">
-                </iframe>
                 <p className="px-10 sm:px-0 lg:w-2/3 md:w-3/4 w-full text-balance my-5">Un projet audiovisuel dont je suis extrêmement fier. Ce film ne possède aucun scénario. Il possède un thème. Cette sensation d'enfermement où l'on ne peut que chercher à sortir, par tous les moyens qui soit.</p>
                 <div className='text-white bg-black p-2 px-5 rounded-full cursor-pointer md:m-0 m-auto'><Link to={nextProject}>Prochain Projet</Link></div>
             </section>
@@ -52,4 +50,4 @@ function Fil() {
     )
 }
 
-export default Fil
+export default Exit
