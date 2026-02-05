@@ -28,7 +28,7 @@ function Works() {
 
                 <WorkCard
                     title={"Dashboard Climat"}
-                    desc={"Analyse et représentation d'un jeu de donnée sur le climat en Loire-Atlantique dans le but de démontrer graphiquement le changement climatique."}
+                    desc={"Analyse et représentation d'un jeu de données sur le climat en Loire-Atlantique dans le but de démontrer graphiquement le changement climatique."}
                     img={dashboard}
                     link={"dashboard"}
                     badges={
